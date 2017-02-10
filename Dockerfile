@@ -1,3 +1,12 @@
+##################################################################
+# Dockerfile automated Docker Hub build - base image for Varnish5
+#
+# Centos6.8
+# Supervisor
+# Nginx
+# Varnish-5.0.0
+#
+##################################################################
 FROM centos:centos6.8
 
 MAINTAINER sKull99 <jefe99.jeb@gmail.com>
