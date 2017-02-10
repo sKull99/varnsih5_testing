@@ -27,7 +27,7 @@ RUN rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6 \
 RUN yum -y install \
 	wget \
 	nginx \
-	supervisord \
+	supervisor \
 	autoconf \
 	automake \
 	jemalloc-devel \
@@ -51,7 +51,7 @@ RUN ln -s /usr/local/varnish-5.0.0 /usr/local/varnish
 ## DIRECTORYS
 RUN mkdir /etc/varnish
 RUN mkdir -p /var/www/default.int
-RUN mkdir -p /etc/supervisord/conf.d
+RUN mkdir -p /etc/supervisor/conf.d
 
 ## CLEAN UP
 RUN rm -rf /usr/local/src/*
